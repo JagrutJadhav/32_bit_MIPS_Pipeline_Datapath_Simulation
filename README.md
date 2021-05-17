@@ -43,4 +43,17 @@ lw $t6, 11($0)      0x8c0e000b
 sw $t7, 15($0)      0xac0f000f
 
 ```
-To make the simulation easier to understand, below are the diagrams showing the data paths for every cycle in the pipeline. The similation log can be accessed in the simulation folder of the project.
+To make the simulation easier to understand, below are the diagrams showing the data paths for every cycle in the pipeline. The simulation report can be accessed in the simulation_src folder of the project.
+
+### Simulation of MIPS data path
+
+![](images/cycle_1.PNG)
+![](images/cycle_2.PNG)
+![](images/cycle_3.PNG)
+![](images/cycle_4.PNG)
+![](images/cycle_5.PNG)
+![](images/cycle_6.PNG)
+![](images/cycle_7.PNG)
+![](images/cycle_8.PNG)
+![](images/cycle_9.PNG)
+![](images/cycle_10.PNG)
