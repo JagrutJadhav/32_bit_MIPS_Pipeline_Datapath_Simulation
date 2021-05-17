@@ -32,3 +32,15 @@ ADDI - add immidiate
 The processor I designed uses Little Endian. Every stage uses one clock cycle for execution. Currently it supports only R type and I type instructions. In I type, provision for branch instructions has also been made but not used for simulation. The RTL block design for MIPS data path is as follows.
 
 ![](images/vivado_bd.PNG)
+
+To simulate the design, we will be using few instructions which will be stored in instruction memory in HEX format. 
+```
+lw $t4, 3($0)       0x8c0c0003
+add $t7, $t1, $t2   0x012a7820
+addi $t2, $t3, 4    0x216a0004
+or $t5, $t3, $t6    0x012e7825
+lw $t6, 11($0)      0x8c0e000b
+sw $t7, 15($0)      0xac0f000f
+
+```
+To make the simulation easier to understand, below are the diagrams showing the data paths for every cycle in the pipeline. The similation log can be accessed in the simulation folder of the project.
