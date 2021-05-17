@@ -31,4 +31,4 @@ ADDI - add immidiate
 ```
 The processor I designed uses Little Endian. Every stage uses one clock cycle for execution. Currently it supports only R type and I type instructions. In I type, provision for branch instructions has also been made but not used for simulation. The RTL block design for MIPS data path is as follows.
 
-![](images/vivado_bd)
+![](images/vivado_bd.PNG)
