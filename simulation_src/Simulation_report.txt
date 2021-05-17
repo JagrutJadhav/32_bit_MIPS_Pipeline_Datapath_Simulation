@@ -1,0 +1,696 @@
+source D:/Jagrut/fetch_stage_verilog/ECE_690_project/ECE_690_project.sim/sim_1/behav/xsim/xsim.dir/mips_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Jagrut/fetch_stage_verilog/ECE_690_project/ECE_690_project.sim/sim_1/behav/xsim/xsim.dir/mips_TB_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Apr 29 16:43:30 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Apr 29 16:43:30 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.828 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Jagrut/fetch_stage_verilog/ECE_690_project/ECE_690_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mips_TB_behav -key {Behavioral:sim_1:Functional:mips_TB} -tclbatch {mips_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source mips_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+         
+         
+Cycle count: 0 //////////////////////////////////////////////////
+/////////////Fetch Stage////////////////
+A = 0
+B = 0
+Instruction = xxxxxxxx
+/////////////Decode Stage////////////////
+C (opcode and funct)= xx and xx
+D = xx
+E = xx
+reg_1 output data = x
+reg_2 outout data = x
+F = xx
+G = x
+I = xx
+J = xx
+H = xxxx and after sign extend we get xxxxxxxx
+/////////////Execute Stage////////////////
+N = xxxxxxxx
+L = x
+M = x
+P = xx
+K = x
+O = x
+/////////////Memory Stage////////////////
+Q = x
+R = x
+/////////////Write Back Stage////////////////
+S = x
+T = x
+U = xx
+         
+         
+Cycle count: 0 //////////////////////////////////////////////////
+/////////////Fetch Stage////////////////
+A = x
+B = 4
+Instruction = 8c0c0003
+/////////////Decode Stage////////////////
+C (opcode and funct)= xx and xx
+D = xx
+E = xx
+reg_1 output data = x
+reg_2 outout data = x
+F = xx
+G = x
+I = xx
+J = xx
+H = xxxx and after sign extend we get xxxxxxxx
+/////////////Execute Stage////////////////
+N = xxxxxxxx
+L = x
+M = x
+P = xx
+K = x
+O = X
+/////////////Memory Stage////////////////
+Q = x
+R = x
+/////////////Write Back Stage////////////////
+S = x
+T = x
+U = xx
+         
+         
+Cycle count: 1 //////////////////////////////////////////////////
+/////////////Fetch Stage////////////////
+A = 4
+B = x
+Instruction = xxxxxxxx
+/////////////Decode Stage////////////////
+C (opcode and funct)= 23 and xx
+D = 0
+E = c
+reg_1 output data = 0
+reg_2 outout data = x
+F = xx
+G = x
+I = c
+J = 0
+H = 3 and after sign extend we get xxxxxxxx
+/////////////Execute Stage////////////////
+N = xxxxxxxx
+L = x
+M = x
+P = xx
+K = x
+O = X
+/////////////Memory Stage////////////////
+Q = X
+R = x
+/////////////Write Back Stage////////////////
+S = x
+T = x
+U = xx
+         
+         
+Cycle count: 1 //////////////////////////////////////////////////
+/////////////Fetch Stage////////////////
+A = x
+B = 8
+Instruction = 12a7820
+/////////////Decode Stage////////////////
+C (opcode and funct)= xx and 3
+D = xx
+E = xx
+reg_1 output data = x
+reg_2 outout data = x
+F = xx
+G = x
+I = xx
+J = xx
+H = xxxx and after sign extend we get xxxxxxxx
+/////////////Execute Stage////////////////
+N = xxxxxxxx
+L = x
+M = x
+P = xx
+K = x
+O = X
+/////////////Memory Stage////////////////
+Q = X
+R = x
+/////////////Write Back Stage////////////////
+S = x
+T = x
+U = xx
+         
+         
+Cycle count: 2 //////////////////////////////////////////////////
+/////////////Fetch Stage////////////////
+A = 8
+B = x
+Instruction = xxxxxxxx
+/////////////Decode Stage////////////////
+C (opcode and funct)= 0 and xx
+D = 9
+E = a
+reg_1 output data = 15
+reg_2 outout data = 20
+F = xx
+G = x
+I = a
+J = f
+H = 7820 and after sign extend we get xxxxxxxx
+/////////////Execute Stage////////////////
+N = xxxxxxxx
+L = x
+M = 3
+P = c
+K = 0
+O = X
+/////////////Memory Stage////////////////
+Q = X
+R = x
+/////////////Write Back Stage////////////////
+S = x
+T = X
+U = xx
+         
+         
+Cycle count: 2 //////////////////////////////////////////////////
+/////////////Fetch Stage////////////////
+A = x
+B = 12
+Instruction = 216a0004
+/////////////Decode Stage////////////////
+C (opcode and funct)= xx and 20
+D = xx
+E = xx
+reg_1 output data = x
+reg_2 outout data = x
+F = xx
+G = x
+I = xx
+J = xx
+H = xxxx and after sign extend we get 3
+/////////////Execute Stage////////////////
+N = xxxxxxxx
+L = x
+M = x
+P = xx
+K = x
+O = 3
+/////////////Memory Stage////////////////
+Q = X
+R = x
+/////////////Write Back Stage////////////////
+S = x
+T = X
+U = xx
+         
+         
+Cycle count: 3 //////////////////////////////////////////////////
+/////////////Fetch Stage////////////////
+A = 12
+B = x
+Instruction = xxxxxxxx
+/////////////Decode Stage////////////////
+C (opcode and funct)= 8 and xx
+D = b
+E = a
+reg_1 output data = 25
+reg_2 outout data = 20
+F = xx
+G = x
+I = a
+J = 0
+H = 4 and after sign extend we get xxxxxxxx
+/////////////Execute Stage////////////////
+N = xxxxxxxx
+L = 20
+M = 30752
+P = f
+K = 15
+O = X
+/////////////Memory Stage////////////////
+Q = 3
+R = x
+/////////////Write Back Stage////////////////
+S = x
+T = X
+U = xx
+         
+         
+Cycle count: 3 //////////////////////////////////////////////////
+/////////////Fetch Stage////////////////
+A = x
+B = 16
+Instruction = 12e7825
+/////////////Decode Stage////////////////
+C (opcode and funct)= xx and 4
+D = xx
+E = xx
+reg_1 output data = x
+reg_2 outout data = x
+F = xx
+G = x
+I = xx
+J = xx
+H = xxxx and after sign extend we get 7820
+/////////////Execute Stage////////////////
+N = xxxxxxxx
+L = x
+M = x
+P = xx
+K = x
+O = 35
+/////////////Memory Stage////////////////
+Q = X
+R = x
+/////////////Write Back Stage////////////////
+S = x
+T = X
+U = xx
+         
+         
+Cycle count: 4 //////////////////////////////////////////////////
+/////////////Fetch Stage////////////////
+A = 16
+B = x
+Instruction = xxxxxxxx
+/////////////Decode Stage////////////////
+C (opcode and funct)= 0 and xx
+D = 9
+E = e
+reg_1 output data = 15
+reg_2 outout data = 40
+F = c
+G = 5
+I = e
+J = f
+H = 7825 and after sign extend we get xxxxxxxx
+/////////////Execute Stage////////////////
+N = xxxxxxxx
+L = 20
+M = 4
+P = a
+K = 25
+O = X
+/////////////Memory Stage////////////////
+Q = 35
+R = 20
+/////////////Write Back Stage////////////////
+S = 5
+T = 3
+U = c
+         
+         
+Cycle count: 4 //////////////////////////////////////////////////
+/////////////Fetch Stage////////////////
+A = x
+B = 20
+Instruction = 8c0e000b
+/////////////Decode Stage////////////////
+C (opcode and funct)= xx and 25
+D = xx
+E = xx
+reg_1 output data = x
+reg_2 outout data = x
+F = xx
+G = X
+I = xx
+J = xx
+H = xxxx and after sign extend we get 4
+/////////////Execute Stage////////////////
+N = xxxxxxxx
+L = x
+M = x
+P = xx
+K = x
+O = 29
+/////////////Memory Stage////////////////
+Q = X
+R = x
+/////////////Write Back Stage////////////////
+S = 5
+T = X
+U = xx
+         
+         
+Cycle count: 5 //////////////////////////////////////////////////
+/////////////Fetch Stage////////////////
+A = 20
+B = x
+Instruction = xxxxxxxx
+/////////////Decode Stage////////////////
+C (opcode and funct)= 23 and xx
+D = 0
+E = e
+reg_1 output data = 0
+reg_2 outout data = 40
+F = f
+G = 35
+I = e
+J = 0
+H = b and after sign extend we get xxxxxxxx
+/////////////Execute Stage////////////////
+N = xxxxxxxx
+L = 40
+M = 30757
+P = f
+K = 15
+O = X
+/////////////Memory Stage////////////////
+Q = 29
+R = 20
+/////////////Write Back Stage////////////////
+S = 5
+T = 35
+U = f
+         
+         
+Cycle count: 5 //////////////////////////////////////////////////
+/////////////Fetch Stage////////////////
+A = x
+B = 24
+Instruction = ac0f000f
+/////////////Decode Stage////////////////
+C (opcode and funct)= xx and b
+D = xx
+E = xx
+reg_1 output data = x
+reg_2 outout data = x
+F = xx
+G = X
+I = xx
+J = xx
+H = xxxx and after sign extend we get 7825
+/////////////Execute Stage////////////////
+N = xxxxxxxx
+L = x
+M = x
+P = xx
+K = x
+O = 47
+/////////////Memory Stage////////////////
+Q = X
+R = x
+/////////////Write Back Stage////////////////
+S = 5
+T = X
+U = xx
+         
+         
+Cycle count: 6 //////////////////////////////////////////////////
+/////////////Fetch Stage////////////////
+A = 24
+B = x
+Instruction = xxxxxxxx
+/////////////Decode Stage////////////////
+C (opcode and funct)= 2b and xx
+D = 0
+E = f
+reg_1 output data = 0
+reg_2 outout data = 35
+F = a
+G = 29
+I = f
+J = 0
+H = f and after sign extend we get xxxxxxxx
+/////////////Execute Stage////////////////
+N = xxxxxxxx
+L = 40
+M = 11
+P = e
+K = 0
+O = X
+/////////////Memory Stage////////////////
+Q = 47
+R = 40
+/////////////Write Back Stage////////////////
+S = 5
+T = 29
+U = a
+         
+         
+Cycle count: 6 //////////////////////////////////////////////////
+/////////////Fetch Stage////////////////
+A = x
+B = 28
+Instruction = xxxxxxxx
+/////////////Decode Stage////////////////
+C (opcode and funct)= xx and f
+D = xx
+E = xx
+reg_1 output data = x
+reg_2 outout data = x
+F = xx
+G = X
+I = xx
+J = xx
+H = xxxx and after sign extend we get b
+/////////////Execute Stage////////////////
+N = xxxxxxxx
+L = x
+M = x
+P = xx
+K = x
+O = 11
+/////////////Memory Stage////////////////
+Q = X
+R = x
+/////////////Write Back Stage////////////////
+S = 5
+T = X
+U = xx
+         
+         
+Cycle count: 7 //////////////////////////////////////////////////
+/////////////Fetch Stage////////////////
+A = 28
+B = x
+Instruction = xxxxxxxx
+/////////////Decode Stage////////////////
+C (opcode and funct)= xx and xx
+D = xx
+E = xx
+reg_1 output data = x
+reg_2 outout data = x
+F = f
+G = 47
+I = xx
+J = xx
+H = xxxx and after sign extend we get xxxxxxxx
+/////////////Execute Stage////////////////
+N = xxxxxxxx
+L = 35
+M = 15
+P = f
+K = 0
+O = X
+/////////////Memory Stage////////////////
+Q = 11
+R = 40
+/////////////Write Back Stage////////////////
+S = 5
+T = 47
+U = f
+         
+         
+Cycle count: 7 //////////////////////////////////////////////////
+/////////////Fetch Stage////////////////
+A = x
+B = 32
+Instruction = xxxxxxxx
+/////////////Decode Stage////////////////
+C (opcode and funct)= xx and xx
+D = xx
+E = xx
+reg_1 output data = x
+reg_2 outout data = x
+F = xx
+G = X
+I = xx
+J = xx
+H = xxxx and after sign extend we get f
+/////////////Execute Stage////////////////
+N = xxxxxxxx
+L = x
+M = x
+P = xx
+K = x
+O = 15
+/////////////Memory Stage////////////////
+Q = X
+R = x
+/////////////Write Back Stage////////////////
+S = 5
+T = X
+U = xx
+         
+         
+Cycle count: 8 //////////////////////////////////////////////////
+/////////////Fetch Stage////////////////
+A = 32
+B = x
+Instruction = xxxxxxxx
+/////////////Decode Stage////////////////
+C (opcode and funct)= xx and xx
+D = xx
+E = xx
+reg_1 output data = x
+reg_2 outout data = x
+F = e
+G = 153
+I = xx
+J = xx
+H = xxxx and after sign extend we get xxxxxxxx
+/////////////Execute Stage////////////////
+N = xxxxxxxx
+L = x
+M = x
+P = xx
+K = x
+O = X
+/////////////Memory Stage////////////////
+Q = 15
+R = 35
+/////////////Write Back Stage////////////////
+S = 153
+T = 11
+U = e
+         
+         
+Cycle count: 8 //////////////////////////////////////////////////
+/////////////Fetch Stage////////////////
+A = x
+B = 36
+Instruction = xxxxxxxx
+/////////////Decode Stage////////////////
+C (opcode and funct)= xx and xx
+D = xx
+E = xx
+reg_1 output data = x
+reg_2 outout data = x
+F = xx
+G = X
+I = xx
+J = xx
+H = xxxx and after sign extend we get xxxxxxxx
+/////////////Execute Stage////////////////
+N = xxxxxxxx
+L = x
+M = x
+P = xx
+K = x
+O = X
+/////////////Memory Stage////////////////
+Q = X
+R = x
+/////////////Write Back Stage////////////////
+S = 153
+T = X
+U = xx
+         
+         
+Cycle count: 9 //////////////////////////////////////////////////
+/////////////Fetch Stage////////////////
+A = 36
+B = x
+Instruction = xxxxxxxx
+/////////////Decode Stage////////////////
+C (opcode and funct)= xx and xx
+D = xx
+E = xx
+reg_1 output data = x
+reg_2 outout data = x
+F = f
+G = 15
+I = xx
+J = xx
+H = xxxx and after sign extend we get xxxxxxxx
+/////////////Execute Stage////////////////
+N = xxxxxxxx
+L = x
+M = x
+P = xx
+K = x
+O = X
+/////////////Memory Stage////////////////
+Q = X
+R = x
+/////////////Write Back Stage////////////////
+S = 153
+T = 15
+U = f
+         
+         
+Cycle count: 9 //////////////////////////////////////////////////
+/////////////Fetch Stage////////////////
+A = x
+B = 40
+Instruction = xxxxxxxx
+/////////////Decode Stage////////////////
+C (opcode and funct)= xx and xx
+D = xx
+E = xx
+reg_1 output data = x
+reg_2 outout data = x
+F = xx
+G = X
+I = xx
+J = xx
+H = xxxx and after sign extend we get xxxxxxxx
+/////////////Execute Stage////////////////
+N = xxxxxxxx
+L = x
+M = x
+P = xx
+K = x
+O = X
+/////////////Memory Stage////////////////
+Q = X
+R = x
+/////////////Write Back Stage////////////////
+S = 153
+T = X
+U = xx
+         
+         
+Cycle count: 10 //////////////////////////////////////////////////
+/////////////Fetch Stage////////////////
+A = 40
+B = x
+Instruction = xxxxxxxx
+/////////////Decode Stage////////////////
+C (opcode and funct)= xx and xx
+D = xx
+E = xx
+reg_1 output data = x
+reg_2 outout data = x
+F = xx
+G = X
+I = xx
+J = xx
+H = xxxx and after sign extend we get xxxxxxxx
+/////////////Execute Stage////////////////
+N = xxxxxxxx
+L = x
+M = x
+P = xx
+K = x
+O = X
+/////////////Memory Stage////////////////
+Q = X
+R = x
+/////////////Write Back Stage////////////////
+S = 153
+T = X
+U = xx
+$stop called at time : 205 ns : File "D:/Jagrut/fetch_stage_verilog/ECE_690_project/ECE_690_project.srcs/sources_1/new/mips_TB.sv" Line 89
