@@ -1,0 +1,1182 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x6A4A8B1993BAC8BE",
+      "device": "xc7a200tiffv1156-1L",
+      "gen_directory": "../../../../ECE_690_project.gen/sources_1/bd/Design_diagram",
+      "name": "Design_diagram",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2"
+    },
+    "design_tree": {
+      "mux_0": "",
+      "Program_counter_0": "",
+      "pc_add_0": "",
+      "IF_ID_0": "",
+      "add_ex_0": "",
+      "mux_1": "",
+      "mux_2": "",
+      "data_mem_0": "",
+      "mux_3": "",
+      "EX_MEM_0": "",
+      "left_shift_two_0": "",
+      "ALU_0": "",
+      "sign_extend_0": "",
+      "MEM_WB_0": "",
+      "control_unit_0": "",
+      "Instruction_memory_0": "",
+      "register_file_0": "",
+      "ID_EX_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000"
+          }
+        }
+      }
+    },
+    "components": {
+      "mux_0": {
+        "vlnv": "xilinx.com:module_ref:mux:1.0",
+        "xci_name": "Design_diagram_mux_0_0",
+        "xci_path": "ip\\Design_diagram_mux_0_0\\Design_diagram_mux_0_0.xci",
+        "inst_hier_path": "mux_0",
+        "reference_info": {
+          "ref_type": "unknown",
+          "ref_name": "mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sel": {
+            "direction": "I"
+          },
+          "data_in_1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "data_in_2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "Program_counter_0": {
+        "vlnv": "xilinx.com:module_ref:Program_counter:1.0",
+        "xci_name": "Design_diagram_Program_counter_0_0",
+        "xci_path": "ip\\Design_diagram_Program_counter_0_0\\Design_diagram_Program_counter_0_0.xci",
+        "inst_hier_path": "Program_counter_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Program_counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "Design_diagram_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "pc_in": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "pc_out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "pc_add_0": {
+        "vlnv": "xilinx.com:module_ref:pc_add:1.0",
+        "xci_name": "Design_diagram_pc_add_0_0",
+        "xci_path": "ip\\Design_diagram_pc_add_0_0\\Design_diagram_pc_add_0_0.xci",
+        "inst_hier_path": "pc_add_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "pc_add",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "Design_diagram_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "pc_out": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "pc_4": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "IF_ID_0": {
+        "vlnv": "xilinx.com:module_ref:IF_ID:1.0",
+        "xci_name": "Design_diagram_IF_ID_0_0",
+        "xci_path": "ip\\Design_diagram_IF_ID_0_0\\Design_diagram_IF_ID_0_0.xci",
+        "inst_hier_path": "IF_ID_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "IF_ID",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "Design_diagram_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "pc_4": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "instruction": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "IF_out_pc_4": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "opcode": {
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          },
+          "rs": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "rt": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "rd": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "shant": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "funct": {
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          },
+          "imm_add": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "add_ex_0": {
+        "vlnv": "xilinx.com:module_ref:add_ex:1.0",
+        "xci_name": "Design_diagram_add_ex_0_0",
+        "xci_path": "ip\\Design_diagram_add_ex_0_0\\Design_diagram_add_ex_0_0.xci",
+        "inst_hier_path": "add_ex_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "add_ex",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "Design_diagram_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "pc_in": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "shift_in": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "add": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "mux_1": {
+        "vlnv": "xilinx.com:module_ref:mux:1.0",
+        "xci_name": "Design_diagram_mux_1_0",
+        "xci_path": "ip\\Design_diagram_mux_1_0\\Design_diagram_mux_1_0.xci",
+        "inst_hier_path": "mux_1",
+        "parameters": {
+          "inp": {
+            "value": "5"
+          }
+        },
+        "reference_info": {
+          "ref_type": "unknown",
+          "ref_name": "mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sel": {
+            "direction": "I"
+          },
+          "data_in_1": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "data_in_2": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          }
+        }
+      },
+      "mux_2": {
+        "vlnv": "xilinx.com:module_ref:mux:1.0",
+        "xci_name": "Design_diagram_mux_2_0",
+        "xci_path": "ip\\Design_diagram_mux_2_0\\Design_diagram_mux_2_0.xci",
+        "inst_hier_path": "mux_2",
+        "reference_info": {
+          "ref_type": "unknown",
+          "ref_name": "mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sel": {
+            "direction": "I"
+          },
+          "data_in_1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "data_in_2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "data_mem_0": {
+        "vlnv": "xilinx.com:module_ref:data_mem:1.0",
+        "xci_name": "Design_diagram_data_mem_0_0",
+        "xci_path": "ip\\Design_diagram_data_mem_0_0\\Design_diagram_data_mem_0_0.xci",
+        "inst_hier_path": "data_mem_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "data_mem",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "Design_diagram_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "mem_read": {
+            "direction": "I"
+          },
+          "mem_write": {
+            "direction": "I"
+          },
+          "address": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "write_data": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "read_data": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "mux_3": {
+        "vlnv": "xilinx.com:module_ref:mux:1.0",
+        "xci_name": "Design_diagram_mux_3_0",
+        "xci_path": "ip\\Design_diagram_mux_3_0\\Design_diagram_mux_3_0.xci",
+        "inst_hier_path": "mux_3",
+        "reference_info": {
+          "ref_type": "unknown",
+          "ref_name": "mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sel": {
+            "direction": "I"
+          },
+          "data_in_1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "data_in_2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "EX_MEM_0": {
+        "vlnv": "xilinx.com:module_ref:EX_MEM:1.0",
+        "xci_name": "Design_diagram_EX_MEM_0_0",
+        "xci_path": "ip\\Design_diagram_EX_MEM_0_0\\Design_diagram_EX_MEM_0_0.xci",
+        "inst_hier_path": "EX_MEM_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "EX_MEM",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "we_control": {
+            "direction": "I"
+          },
+          "mem_control": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "add_branch": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "zero": {
+            "direction": "I"
+          },
+          "result": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "write_data": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "reg_dst": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "we_control_out": {
+            "direction": "O"
+          },
+          "mem_control_rd": {
+            "direction": "O"
+          },
+          "mem_control_wr": {
+            "direction": "O"
+          },
+          "add_branch_out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "zero_out": {
+            "direction": "O"
+          },
+          "result_out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "write_data_out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "reg_dst_out": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          }
+        }
+      },
+      "left_shift_two_0": {
+        "vlnv": "xilinx.com:module_ref:left_shift_two:1.0",
+        "xci_name": "Design_diagram_left_shift_two_0_0",
+        "xci_path": "ip\\Design_diagram_left_shift_two_0_0\\Design_diagram_left_shift_two_0_0.xci",
+        "inst_hier_path": "left_shift_two_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "left_shift_two",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sign_ext": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "left_shift": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "ALU_0": {
+        "vlnv": "xilinx.com:module_ref:ALU:1.0",
+        "xci_name": "Design_diagram_ALU_0_0",
+        "xci_path": "ip\\Design_diagram_ALU_0_0\\Design_diagram_ALU_0_0.xci",
+        "inst_hier_path": "ALU_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ALU",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "inp_1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "inp_2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "alu_op": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "result": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "zero": {
+            "direction": "O"
+          }
+        }
+      },
+      "sign_extend_0": {
+        "vlnv": "xilinx.com:module_ref:sign_extend:1.0",
+        "xci_name": "Design_diagram_sign_extend_0_0",
+        "xci_path": "ip\\Design_diagram_sign_extend_0_0\\Design_diagram_sign_extend_0_0.xci",
+        "inst_hier_path": "sign_extend_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sign_extend",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "imm_add": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "imm_add_ext": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "MEM_WB_0": {
+        "vlnv": "xilinx.com:module_ref:MEM_WB:1.0",
+        "xci_name": "Design_diagram_MEM_WB_0_0",
+        "xci_path": "ip\\Design_diagram_MEM_WB_0_0\\Design_diagram_MEM_WB_0_0.xci",
+        "inst_hier_path": "MEM_WB_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "MEM_WB",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "we_control": {
+            "direction": "I"
+          },
+          "read_data": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "result": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "reg_dst": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "we_control_out": {
+            "direction": "O"
+          },
+          "read_data_out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "result_out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "reg_dst_out": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          }
+        }
+      },
+      "control_unit_0": {
+        "vlnv": "xilinx.com:module_ref:control_unit:1.0",
+        "xci_name": "Design_diagram_control_unit_0_0",
+        "xci_path": "ip\\Design_diagram_control_unit_0_0\\Design_diagram_control_unit_0_0.xci",
+        "inst_hier_path": "control_unit_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "control_unit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "opcode": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "funct": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "we_control": {
+            "direction": "O"
+          },
+          "mem_control": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "exe_control": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          }
+        }
+      },
+      "Instruction_memory_0": {
+        "vlnv": "xilinx.com:module_ref:Instruction_memory:1.0",
+        "xci_name": "Design_diagram_Instruction_memory_0_0",
+        "xci_path": "ip\\Design_diagram_Instruction_memory_0_0\\Design_diagram_Instruction_memory_0_0.xci",
+        "inst_hier_path": "Instruction_memory_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Instruction_memory",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "pc_out": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "instruction": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "register_file_0": {
+        "vlnv": "xilinx.com:module_ref:register_file:1.0",
+        "xci_name": "Design_diagram_register_file_0_0",
+        "xci_path": "ip\\Design_diagram_register_file_0_0\\Design_diagram_register_file_0_0.xci",
+        "inst_hier_path": "register_file_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "register_file",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "reg_1": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "reg_2": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "write_reg": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "write_data": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "reg_1_data": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "reg_2_data": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "ID_EX_0": {
+        "vlnv": "xilinx.com:module_ref:ID_EX:1.0",
+        "xci_name": "Design_diagram_ID_EX_0_0",
+        "xci_path": "ip\\Design_diagram_ID_EX_0_0\\Design_diagram_ID_EX_0_0.xci",
+        "inst_hier_path": "ID_EX_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ID_EX",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "PC_pass": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "we_control": {
+            "direction": "I"
+          },
+          "mem_control": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "exe_control": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "reg_1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "reg_2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "sign_ext": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "rt": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "rd": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "PC_pass_out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "we_control_out": {
+            "direction": "O"
+          },
+          "mem_control_out": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "exe_control_alu": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "alu_src": {
+            "direction": "O"
+          },
+          "reg_dst": {
+            "direction": "O"
+          },
+          "reg_1_out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "reg_2_out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "sign_ext_out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "rt_out": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "rd_out": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Instruction_memory_0_instruction": {
+        "ports": [
+          "Instruction_memory_0/instruction",
+          "IF_ID_0/instruction"
+        ]
+      },
+      "pc_add_0_pc_4": {
+        "ports": [
+          "pc_add_0/pc_4",
+          "mux_0/data_in_1",
+          "IF_ID_0/pc_4"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "Program_counter_0/clk",
+          "pc_add_0/clk",
+          "IF_ID_0/clk",
+          "add_ex_0/clk",
+          "data_mem_0/clk",
+          "EX_MEM_0/clk",
+          "ALU_0/clk",
+          "sign_extend_0/clk",
+          "MEM_WB_0/clk",
+          "control_unit_0/clk",
+          "Instruction_memory_0/clk",
+          "register_file_0/clk",
+          "ID_EX_0/clk"
+        ]
+      },
+      "Program_counter_0_pc_out": {
+        "ports": [
+          "Program_counter_0/pc_out",
+          "pc_add_0/pc_out",
+          "Instruction_memory_0/pc_out"
+        ]
+      },
+      "mux_0_data_out": {
+        "ports": [
+          "mux_0/data_out",
+          "Program_counter_0/pc_in"
+        ]
+      },
+      "IF_ID_0_IF_out_pc_4": {
+        "ports": [
+          "IF_ID_0/IF_out_pc_4",
+          "ID_EX_0/PC_pass"
+        ]
+      },
+      "control_unit_0_we_control": {
+        "ports": [
+          "control_unit_0/we_control",
+          "ID_EX_0/we_control"
+        ]
+      },
+      "control_unit_0_mem_control": {
+        "ports": [
+          "control_unit_0/mem_control",
+          "ID_EX_0/mem_control"
+        ]
+      },
+      "control_unit_0_exe_control": {
+        "ports": [
+          "control_unit_0/exe_control",
+          "ID_EX_0/exe_control"
+        ]
+      },
+      "IF_ID_0_opcode": {
+        "ports": [
+          "IF_ID_0/opcode",
+          "control_unit_0/opcode"
+        ]
+      },
+      "IF_ID_0_funct": {
+        "ports": [
+          "IF_ID_0/funct",
+          "control_unit_0/funct"
+        ]
+      },
+      "IF_ID_0_rs": {
+        "ports": [
+          "IF_ID_0/rs",
+          "register_file_0/reg_1"
+        ]
+      },
+      "IF_ID_0_rt": {
+        "ports": [
+          "IF_ID_0/rt",
+          "register_file_0/reg_2",
+          "ID_EX_0/rt"
+        ]
+      },
+      "IF_ID_0_rd": {
+        "ports": [
+          "IF_ID_0/rd",
+          "ID_EX_0/rd"
+        ]
+      },
+      "IF_ID_0_imm_add": {
+        "ports": [
+          "IF_ID_0/imm_add",
+          "sign_extend_0/imm_add"
+        ]
+      },
+      "sign_extend_0_imm_add_ext": {
+        "ports": [
+          "sign_extend_0/imm_add_ext",
+          "ID_EX_0/sign_ext"
+        ]
+      },
+      "register_file_0_reg_1_data": {
+        "ports": [
+          "register_file_0/reg_1_data",
+          "ID_EX_0/reg_1"
+        ]
+      },
+      "register_file_0_reg_2_data": {
+        "ports": [
+          "register_file_0/reg_2_data",
+          "ID_EX_0/reg_2"
+        ]
+      },
+      "ID_EX_0_sign_ext_out": {
+        "ports": [
+          "ID_EX_0/sign_ext_out",
+          "mux_2/data_in_2",
+          "left_shift_two_0/sign_ext"
+        ]
+      },
+      "ID_EX_0_PC_pass_out": {
+        "ports": [
+          "ID_EX_0/PC_pass_out",
+          "add_ex_0/pc_in"
+        ]
+      },
+      "left_shift_two_0_left_shift": {
+        "ports": [
+          "left_shift_two_0/left_shift",
+          "add_ex_0/shift_in"
+        ]
+      },
+      "add_ex_0_add": {
+        "ports": [
+          "add_ex_0/add",
+          "EX_MEM_0/add_branch"
+        ]
+      },
+      "ID_EX_0_exe_control_alu": {
+        "ports": [
+          "ID_EX_0/exe_control_alu",
+          "ALU_0/alu_op"
+        ]
+      },
+      "ID_EX_0_alu_src": {
+        "ports": [
+          "ID_EX_0/alu_src",
+          "mux_2/sel"
+        ]
+      },
+      "ID_EX_0_reg_dst": {
+        "ports": [
+          "ID_EX_0/reg_dst",
+          "mux_1/sel"
+        ]
+      },
+      "ID_EX_0_reg_2_out": {
+        "ports": [
+          "ID_EX_0/reg_2_out",
+          "mux_2/data_in_1",
+          "EX_MEM_0/write_data"
+        ]
+      },
+      "mux_2_data_out": {
+        "ports": [
+          "mux_2/data_out",
+          "ALU_0/inp_2"
+        ]
+      },
+      "ID_EX_0_rt_out": {
+        "ports": [
+          "ID_EX_0/rt_out",
+          "mux_1/data_in_1"
+        ]
+      },
+      "ID_EX_0_rd_out": {
+        "ports": [
+          "ID_EX_0/rd_out",
+          "mux_1/data_in_2"
+        ]
+      },
+      "mux_1_data_out": {
+        "ports": [
+          "mux_1/data_out",
+          "EX_MEM_0/reg_dst"
+        ]
+      },
+      "ALU_0_zero": {
+        "ports": [
+          "ALU_0/zero",
+          "EX_MEM_0/zero"
+        ]
+      },
+      "ALU_0_result": {
+        "ports": [
+          "ALU_0/result",
+          "EX_MEM_0/result"
+        ]
+      },
+      "ID_EX_0_we_control_out": {
+        "ports": [
+          "ID_EX_0/we_control_out",
+          "EX_MEM_0/we_control"
+        ]
+      },
+      "ID_EX_0_mem_control_out": {
+        "ports": [
+          "ID_EX_0/mem_control_out",
+          "EX_MEM_0/mem_control"
+        ]
+      },
+      "EX_MEM_0_add_branch_out": {
+        "ports": [
+          "EX_MEM_0/add_branch_out",
+          "mux_0/data_in_2"
+        ]
+      },
+      "EX_MEM_0_zero_out": {
+        "ports": [
+          "EX_MEM_0/zero_out",
+          "mux_0/sel"
+        ]
+      },
+      "MEM_WB_0_we_control_out": {
+        "ports": [
+          "MEM_WB_0/we_control_out",
+          "mux_3/sel"
+        ]
+      },
+      "MEM_WB_0_read_data_out": {
+        "ports": [
+          "MEM_WB_0/read_data_out",
+          "mux_3/data_in_1"
+        ]
+      },
+      "MEM_WB_0_result_out": {
+        "ports": [
+          "MEM_WB_0/result_out",
+          "mux_3/data_in_2"
+        ]
+      },
+      "data_mem_0_read_data": {
+        "ports": [
+          "data_mem_0/read_data",
+          "MEM_WB_0/read_data"
+        ]
+      },
+      "EX_MEM_0_mem_control_rd": {
+        "ports": [
+          "EX_MEM_0/mem_control_rd",
+          "data_mem_0/mem_read"
+        ]
+      },
+      "EX_MEM_0_mem_control_wr": {
+        "ports": [
+          "EX_MEM_0/mem_control_wr",
+          "data_mem_0/mem_write"
+        ]
+      },
+      "EX_MEM_0_we_control_out": {
+        "ports": [
+          "EX_MEM_0/we_control_out",
+          "MEM_WB_0/we_control"
+        ]
+      },
+      "EX_MEM_0_result_out": {
+        "ports": [
+          "EX_MEM_0/result_out",
+          "data_mem_0/address",
+          "MEM_WB_0/result"
+        ]
+      },
+      "EX_MEM_0_reg_dst_out": {
+        "ports": [
+          "EX_MEM_0/reg_dst_out",
+          "MEM_WB_0/reg_dst"
+        ]
+      },
+      "EX_MEM_0_write_data_out": {
+        "ports": [
+          "EX_MEM_0/write_data_out",
+          "data_mem_0/write_data"
+        ]
+      },
+      "mux_3_data_out": {
+        "ports": [
+          "mux_3/data_out",
+          "register_file_0/write_data"
+        ]
+      },
+      "MEM_WB_0_reg_dst_out": {
+        "ports": [
+          "MEM_WB_0/reg_dst_out",
+          "register_file_0/write_reg"
+        ]
+      },
+      "ID_EX_0_reg_1_out": {
+        "ports": [
+          "ID_EX_0/reg_1_out",
+          "ALU_0/inp_1"
+        ]
+      }
+    }
+  }
+}
