@@ -20,3 +20,5 @@ output reg [31:0] instruction     //output 32 bit instruction from instruction m
     instruction[31:24]  <= IM[pc_out + 3];
     end
 endmodule
+
+
